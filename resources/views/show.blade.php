@@ -4,7 +4,9 @@
     <h2>Book Details</h2>
 
     <div>
-        <h3>Title</h3>:
-        <p>{{$book->title}}</p>
+        <p><strong>Title:</strong>{{$book->title}}</p>
+        <p><strong>Auther:</strong>{{$book->auther}}</p>
+        <p><strong>Type:</strong>{{$book->type}}</p>
+        <p><strong>Description:</strong>{{$book->description}}</p>
     </div>
 @endsection
