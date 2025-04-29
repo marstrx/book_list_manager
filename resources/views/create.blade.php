@@ -3,7 +3,7 @@
 @section("content")
     <h2>Add a new book to the list</h2>
 
-    <form action="{{route("store")}}" method="POST">
+    <form action="{{route("books.store")}}" method="POST">
         @csrf
         <div>
             <label for="title">title</label>

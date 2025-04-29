@@ -37,7 +37,7 @@ class BooksController extends Controller
         ]);
 
         Book::create($request->all());
-        return redirect()->route("index");
+        return redirect()->route("books.index");
     }
 
     /**
@@ -67,8 +67,9 @@ class BooksController extends Controller
     /**
      * Remove the specified resource from storage.
      */
-    public function destroy(string $id)
+    public function destroy(Book $book)
     {
-        //
+        $book->delete();
+        return redirect()->route("books.index");
     }
 }
