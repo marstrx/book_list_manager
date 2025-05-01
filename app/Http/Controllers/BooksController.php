@@ -51,17 +51,25 @@ class BooksController extends Controller
     /**
      * Show the form for editing the specified resource.
      */
-    public function edit(string $id)
+    public function edit(Book $book)
     {
-        //
+        return view("edit",compact("book"));
     }
 
     /**
      * Update the specified resource in storage.
      */
-    public function update(Request $request, string $id)
+    public function update(Request $request, Book $book)
     {
-        //
+        $request->validate([
+            "title"=>"string|required",
+            "auther"=>"string|required|max:40",
+            "type"=>"string|required|max:40",
+            "description"=>"string|required|min:3"
+        ]);
+
+        $book->update($request->all());
+        return redirect()->route("books.index");
     }
 
     /**
