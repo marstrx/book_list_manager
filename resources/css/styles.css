@@ -1,0 +1,230 @@
+body {
+    font-family: Arial, sans-serif;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f5f5f5;
+}
+
+h1 {
+    color: #333;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+h2 {
+    color: #444;
+    margin-bottom: 20px;
+}
+
+/* Table Styles */
+.book-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 0.9em;
+    min-width: 400px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.book-table thead tr {
+    background-color: #009879;
+    color: #ffffff;
+    text-align: left;
+}
+
+.book-table th,
+.book-table td {
+    padding: 12px 15px;
+}
+
+.book-table tbody tr {
+    border-bottom: 1px solid #dddddd;
+}
+
+.book-table tbody tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+}
+
+.book-table tbody tr:last-of-type {
+    border-bottom: 2px solid #009879;
+}
+
+/* Button and Link Styles */
+.btn {
+    display: inline-block;
+    padding: 6px 12px; 
+    border-radius: 4px;
+    text-decoration: none;
+    font-weight: 500;
+    cursor: pointer;
+    border: none;
+    font-size: 14px;
+    line-height: 1.5;
+    height: 32px; 
+    box-sizing: border-box;
+}
+
+.btn-primary {
+    background-color: #009879;
+    color: white;
+}
+
+.btn-edit {
+    background-color: #ffa500;
+    color: white;
+}
+
+.btn-delete {
+    background-color: #ff4444;
+    color: white;
+}
+
+.btn:hover {
+    opacity: 0.9;
+    transform: translateY(-1px);
+    transition: all 0.2s;
+}
+
+a {
+    text-decoration: none;
+    color: #4caf50;
+    margin-right: 10px;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Form Styles */
+form {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+form div {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #333;
+    font-weight: 500;
+    text-transform: capitalize;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+input[type="text"]:focus {
+    outline: none;
+    border-color: #009879;
+    box-shadow: 0 0 5px rgba(0, 152, 121, 0.3);
+}
+
+button[type="submit"] {
+    background-color: #009879;
+    color: white;
+    padding: 6px 12px; 
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px; 
+    height: 32px; 
+    font-weight: 500;
+}
+
+button[type="submit"]:hover {
+    background-color: #007f67;
+    transform: translateY(-1px);
+    transition: all 0.2s;
+}
+
+/* Error states */
+input.error {
+    border-color: #ff4444;
+}
+
+.error-message {
+    color: #ff4444;
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+/* Action buttons styles */
+.action-buttons {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+
+.action-buttons form {
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+}
+
+.action-buttons button {
+    height: 32px; 
+    padding: 6px 12px; 
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+/* Book Details Styles */
+.book-details {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 30px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.book-details h2 {
+    color: #009879;
+    margin-bottom: 25px;
+    border-bottom: 2px solid #009879;
+    padding-bottom: 10px;
+}
+
+.book-details p {
+    margin: 15px 0;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.book-details strong {
+    color: #333;
+    min-width: 120px;
+    display: inline-block;
+    font-weight: 600;
+}
+
+.back-button {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #009879;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: all 0.2s;
+}
+
+.back-button:hover {
+    background-color: #007f67;
+    transform: translateY(-1px);
+}
